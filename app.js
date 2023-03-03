@@ -71,4 +71,4 @@ const player = { //object 안에
 };
 console.log(player.name);
 player.sayHello("lynn");
-player.sayHello("lynn");
+player.sayHello("lulu");
