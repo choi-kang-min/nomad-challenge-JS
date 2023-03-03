@@ -5,7 +5,7 @@ let myName = "choi"; // 후에 수정이 가능함 : let
 console.log(a + b); // console에다가 값을 출력함 : console.log()
 console.log(a * b);
 console.log(a / b);
-console.log("hello " + myName);
+console.log("github 충돌실험");
 
 myName = "choichoi"; // 변수의 값을 변경함
 
