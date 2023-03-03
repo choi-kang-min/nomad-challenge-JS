@@ -60,15 +60,3 @@ function plus(a, b) { // 소괄호 안으로 데이터를 받는 변수(?) : arg
 function divide(a, b) {
     console.log(a / b);
 }
-plus(60, 8);
-divide(98, 20);
-
-const player = { //object 안에
-    name : "nico",
-    sayHello : function(otherPersonsName) {
-        console.log("hello " + otherPersonsName + " nice to meet you!");
-    }
-};
-console.log(player.name);
-player.sayHello("lynn");
-player.sayHello("lulu");
