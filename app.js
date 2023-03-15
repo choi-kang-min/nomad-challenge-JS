@@ -72,3 +72,50 @@ const player = { //object 안에
 console.log(player.name);
 player.sayHello("lynn");
 player.sayHello("lulu");
+
+////////// 계산기 함수 object
+const claculator = {
+    plus: function (a, b) {
+        return a + b;
+    },
+    minus: function (a, b) {
+        return a - b;
+    },
+    times: function (a, b) {
+        return a * b;
+    },
+    divide: function (a, b) {
+        return a / b;
+    },
+    power: function (a, b) {
+        return a ** b;
+    },
+};
+const plusResult = calculator.plus(2, 3);
+const minusResult = calculator.minus(plusResult, 10);
+const timesResult = calculator.times(10, minusResult);
+const divideResult = calculator.plus(timesResult, plusResult);
+const powerResule = calculator.power(divideResult, minusResult);
+
+/////////// 조건문
+const age = prompt("How old are you?");
+
+parseInt(age); // 받은 값이 숫자라면 string이었던 것이 int로 바뀜
+// 만일 age에 글자가 들어가 있다면 NaN으로 출력됨(Not a Number)
+console.log(typeof age); // typeof -> age가 무슨 타입인지 알려준다 -> string, int, float 등
+console.log(isNaN(age)); // boolean형식으로 반환하며, false라면 숫자라는 거임, true면 숫자가 아니라는 거겠지?
+
+// if ,else if
+if (isNaN(age) || age < 0) { // 숫자가 아닐 때, 또는 나이가 0살보다 어릴 떄
+    console.log("please write a number");
+} else if (age < 18) { // 숫자가 18보다 작을 때
+    console.log("You are too young");
+} else if(age >= 18 && age <= 50) { // 숫자가 18이상, 50이하일 떄
+    console.log("you can drink it!");
+}  else if(age >= 51 && age <= 80) { // 숫자가 51이상, 80이하일 때
+    console.log("you should exercise");
+} else if(age > 80) { // 숫자가 80을 넘을 때
+    console.log("You can do whatever you want..!");
+} else if (age === 100) {
+    console.log("wow wou are wise");
+}
